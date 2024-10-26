@@ -24,13 +24,20 @@ Q: How does forking work?
 A: 
 
 ## Conda (Anaconda)
+Note: within this context, the following terminologies are interchangeable:  
+package <-> module <-> library  
+env <-> conda environment
+
 Q: What are the essential commands in conda that allows me to get started?  
 A: In my opinion, these commands are indispensible:  
-1. conda create -n <your_env_name>  
-2. conda list <<your_module>>  
-3. conda env list  
-4. conda env remove -n <your_env_name>  
-The actual use of each command is easy to understand once you run them. They cost you marginally compute to run, so please run them yourself.
+1. `conda create -n <ENV_NAME>` this allows you to create a new conda environment
+2. `conda activate <ENV_NNAME>` this activates an existing environment  
+3. `conda list <<PACKAGE>>` lists all downloaded libraries in this conda environment
+4. `conda env list`  - lists all available environments
+5. `conda env remove -n <YOUR_ENV>` - deletes an existing environment
+6. `conda install <PACKAGE>` - installs the library
+7. `conda uninstall <PACKAGE>` - uninstalls the library
+8. `conda create --clone <OLD_ENV> -n <NEW_ENV>` - clones the activated environment
 
 Q: How is 'conda install' different from 'pip install'?  
 A: 
