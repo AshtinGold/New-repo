@@ -34,6 +34,10 @@ Launch an R-interactive terminal by first installing R by downloading and instal
 ## Git
 Q: What are the essential commands that allow me to use git with github?  
 A: The most basic commands are "add", "commit" and "push". This allows changes in your local directory to be updated in your (online) github repository. 
+`git add <FILE>` or `git add .`  
+`git commit -m 'MESSAGE'`  
+`git push origin -u main`  
+Sometimes instead of master, your branch is instead called main. Check the name of your branch by calling `git branch`.  
 
 Q: How does forking work?  
 A: Forking means creating a copy of another repo (original), which you can then work on without affecting the original. When the original updates itself, you are given the option to update with it. Your forked repo can then merge back to the original repo by a "pull request".
