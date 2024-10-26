@@ -1,4 +1,4 @@
-# Common software installation problems
+# Common software installation problems (win11)
 
 This page is curated to record issues and solutions to common software install problems encountered by the author.
 
@@ -17,6 +17,19 @@ Q: Torch not compiled with CUDA enabled
 A: The  ''Torch not compiled with CUDA enabled'' error is likely to occur when the user does not have CUDA Toolkit installed in their Python environment.
 
 Q: I installed PyTorch on Win11 with Cuda option, but when I verify my installation
+
+## R on vscode
+Q: My variables does not register in the workspace viewer in Vs-code, why?
+A: My solution is to first create the R-workspace in Rstudio. Then, go back to Vscode, and there you'll find workspace properly registered now.
+
+Q: How do I run R code in vscode?
+A: There are multiple options:  
+### Option1:
+To open an R-terminal, run: `pip install radian`.  
+Finally, type radian in the powershell terminal in vscode to launch the R-terminal.
+### Option 2:
+Launch an R-interactive terminal by first installing R by downloading and installing the `.exe` file from the official website. Then, install the R extension on vs-code in the Marketplace. Next,
+
 
 ## Git
 Q: What are the essential commands that allow me to use git with github?  
