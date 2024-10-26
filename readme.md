@@ -18,13 +18,19 @@ Q: I installed PyTorch on Win11 with Cuda option, but when I verify my installat
 
 ## Git
 Q: What are the essential commands that allow me to use git with github?  
-A: The most basic commands are "add", "commit" and "push". This allows changes in your local directory to be updated in your (online) github repository.
+A: The most basic commands are "add", "commit" and "push". This allows changes in your local directory to be updated in your (online) github repository. 
 
-Q: How does forking work?
+Q: How does forking work?  
 A: 
 
 ## Conda (Anaconda)
 Q: What are the essential commands in conda that allows me to get started?  
 A: In my opinion, these commands are indispensible:  
-1. conda create -n <env_name>
-2. conda list << >>
+1. conda create -n <your_env_name>  
+2. conda list <<your_module>>  
+3. conda env list  
+4. conda env remove -n <your_env_name>  
+The actual use of each command is easy to understand once you run them. They cost you marginally compute to run, so please run them yourself.
+
+Q: How is 'conda install' different from 'pip install'?  
+A: 
