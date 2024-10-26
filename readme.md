@@ -7,7 +7,7 @@ Problems pertaining to a single github project will likely not end up here.
 
 ## Syntax
 It is important to define every single term or syntax when writing an explanation blog post. Note that these are my preferred notations, and will be certainly different than other tutorials and blogs you read elsewhere.  
-<>  this indicates a non-optional argument (word) that must be used.  
+<>  this indicates a non-optional argument (word) that must be used. The variable contained within these brackets indicates a string which **you will name by yourself**, and the name which I give is suggestive of what it does, but is not the actual string of letters you (must) put down.   
 << >> this indicates an optional argument.  
 
 ## PyTorch
