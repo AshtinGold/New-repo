@@ -1,4 +1,6 @@
-# This page is curated to record issues and solutions to common software install problems encountered by the author.
+# Common software installation problems
+
+This page is curated to record issues and solutions to common software install problems encountered by the author.
 
 About the author:  
 The author is a passionate computer vision / robotics hobbyist. Therefore if you are in the same field you are likely to encounter the same issues.  
