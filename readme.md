@@ -18,10 +18,14 @@ A: The  ''Torch not compiled with CUDA enabled'' error is likely to occur when t
 
 Q: I installed PyTorch on Win11 with Cuda option, but when I verify my installation
 
-Q: Cuda toolkit for conda?
+Q: Cuda toolkit for conda?  
 A: tldr conda is a terrible package manager that searchers for your specified installation version and its dependencies in different ways. To install say CUDA 12.1, this is the command you should run:  
 `conda install nvidia/label/cuda-12.1.0::cuda-toolkit -c nvidia/label/cuda-12.1.0`  
-This is because when conda installing packages, for package itself, it would look for the channel you specified before '::'. But for its dependences, it will search them channel by channel under the priority it shows you.
+This is because when conda installing packages, for package itself, it would look for the channel you specified before '::'. But for its dependences, it will search them channel by channel under the priority it shows you.  
+
+Q: What is the difference between `nvcc --version` and `nvidia-smi`?  
+A: `nvcc` shows the cuda-toolkit installed. Different versions could be installed in each conda environment, catering to different requirements. The Cuda-toolkit is usually **not** backwards-compatible.  
+`nvidia-smi` on the other hand shows the CUDA driver version in the computer. This is shared across all virtual environments. Fortunately, higher CUDA driver versions are usually backwards compatible.
 
 Reference: https://stackoverflow.com/questions/78484090/conda-cuda12-incompatibility
 
