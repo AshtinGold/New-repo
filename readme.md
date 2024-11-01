@@ -80,9 +80,9 @@ gdown <file_id>`                                 # alternative format
 gdown --folder https://drive.google.com/drive/folders/<file_id>`  # for folders  
 gdown --folder --id <file_id>`                                   # this format works for folders too  
 
-The file id should look like this:  
-# Files
+The file id should look like this:    
+Files  
 `https://drive.google.com/file/d/<file_id>/view?usp=sharing`
-# Folders
+Folders  
 `https://drive.google.com/drive/folders/<file_id>`  
 
