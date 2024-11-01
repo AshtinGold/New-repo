@@ -76,13 +76,13 @@ Q: How to download file from Google Drive using the conda terminal?
 A: `pip install gdown`
 
 `gdown https://drive.google.com/uc?id=<file_id>`  # for files  
-gdown <file_id>`                                 # alternative format  
-gdown --folder https://drive.google.com/drive/folders/<file_id>`  # for folders  
-gdown --folder --id <file_id>`                                   # this format works for folders too  
+`gdown <file_id>`                                 # alternative format  
+`gdown --folder https://drive.google.com/drive/folders/<file_id>`  # for folders  
+`gdown --folder --id <file_id>`                                   # this format works for folders too  
 
 The file id should look like this:    
-Files  
-`https://drive.google.com/file/d/<file_id>/view?usp=sharing`
-Folders  
+Files:  
+`https://drive.google.com/file/d/<file_id>/view?usp=sharing`  
+Folders:  
 `https://drive.google.com/drive/folders/<file_id>`  
 
