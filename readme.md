@@ -106,4 +106,13 @@ $env:CMAKE_ARGS = "-DGGML_OPENBLAS=on -DCMAKE_C_COMPILER=C:/msys64/bin/gcc.exe -
 
 There is no trick to it. Just add as many environmental variables as paths as you can.  
 
+
+Q: Can't find 'nmake' or 'CMAKE_C_COMPILER'  
+A: If you run into issues where it complains it can't find 'nmake' '?' or CMAKE_C_COMPILER, you can extract w64devkit as mentioned in llama.cpp repo and add those manually to CMAKE_ARGS before running pip install:
+
+`$env:CMAKE_GENERATOR = "MinGW Makefiles"  
+$env:CMAKE_ARGS = "-DGGML_OPENBLAS=on -DCMAKE_C_COMPILER=C:/w64devkit/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/w64devkit/bin/g++.exe"`
+
+See the above instructions and set CMAKE_ARGS to the BLAS backend you want to use.
+
 ##
