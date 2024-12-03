@@ -88,7 +88,9 @@ Folders:
 
 ## installing cpp-llama (win11)
 Q: Install errors showing comments like "Cannot find C-compiler" etc.  
-A: In windows, do as many of these as required:  
+A: First make sure G++, GCC and Cmake are installed on your system.
+
+In windows, do as many of these as required:  
 
 `$env:CMAKE_C_COMPILER = "C:\msys64\ucrt64\bin\gcc.exe"`  
 
