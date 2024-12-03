@@ -100,7 +100,9 @@ In windows, do as many of these as required:
 
 `$env:CMAKE_ARGS = "-DGGML_OPENBLAS=on -DCMAKE_C_COMPILER=C:/msys64/ucrt64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/ucrt64/bin/g++.exe"`  
 
-`cmake -DCMAKE_CXX_COMPILER=C:\msys64\ucrt64\bin\g++.exe -DCMAKE_C_COMPILER=C:\msys64\ucrt64\bin\gcc.exe `  
+$env:CMAKE_GENERATOR = "MinGW Makefiles"
+
+$env:CMAKE_ARGS = "-DGGML_OPENBLAS=on -DCMAKE_C_COMPILER=C:/msys64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/bin/g++.exe"
 
 There is no trick to it. Just add as many environmental variables as paths as you can.  
 
