@@ -42,6 +42,25 @@ Finally, type radian in the powershell terminal in vscode to launch the R-termin
 Launch an R-interactive terminal by first installing R by downloading and installing the `.exe` file from the official website. Then, install the R extension on vs-code in the Marketplace. Next,
 
 
+## Docker
+
+Q : Docker: daemon access permission denied issue  
+
+A : sudo groupadd docker
+
+sudo usermod -aG docker $USER   # add user to group
+
+newgrp docker    # Log in to the new docker group
+
+docker run hello-world     # checks if runs normally
+
+(optional):
+
+sudo systemctl restart docker
+
+reboot
+
+
 ## Git
 Q: What are the essential commands that allow me to use git with github?  
 A: The most basic commands are "add", "commit" and "push". This allows changes in your local directory to be updated in your (online) github repository. 
