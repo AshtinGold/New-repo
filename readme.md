@@ -134,4 +134,16 @@ $env:CMAKE_ARGS = "-DGGML_OPENBLAS=on -DCMAKE_C_COMPILER=C:/w64devkit/bin/gcc.ex
 
 See the above instructions and set CMAKE_ARGS to the BLAS backend you want to use.
 
-##
+## Brew
+
+Q: How to install Brew
+
+A: Install by running the following code, which runs the installation command then adds to path:      
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`    
+`cd /opt/homebrew/bin/`   
+`PATH=$PATH:/opt/homebrew/bin`  
+`echo export PATH=$PATH:/opt/homebrew/bin >> ~/.zshrc`  
+`brew doctor`
+
+
+
