@@ -66,6 +66,11 @@ reboot
 Unlike Linux, on Mac, Docker Desktop manages group permissions etc directly for you. After that you can run Docker commands from the terminal, without managing stuff like `sudo` etc.
 
 
+Q: How to deep clean in Docker?
+
+Use `docker system prune -a --volumes`.   
+By default, volumes aren't removed to prevent important data from being deleted if there is currently no container using the volume. Use the --volumes flag when running the command to prune anonymous volumes as well:
+
 ## Git
 Q: What are the essential commands that allow me to use git with github?  
 A: The most basic commands are "add", "commit" and "push". This allows changes in your local directory to be updated in your (online) github repository. 
