@@ -1,4 +1,4 @@
-# Common software installation problems (win11)
+# Common software installation problems (win11 unless specified otherwise)
 
 This page is curated to record issues and solutions to common software install problems encountered by the author.
 
@@ -46,7 +46,9 @@ Launch an R-interactive terminal by first installing R by downloading and instal
 
 Q : Docker: daemon access permission denied issue  
 
-A : sudo groupadd docker
+A : -- Linux  --
+
+sudo groupadd docker
 
 sudo usermod -aG docker $USER   # add user to group
 
@@ -59,6 +61,9 @@ docker run hello-world     # checks if runs normally
 sudo systemctl restart docker
 
 reboot
+
+-- Mac --  
+Unlike Linux, on Mac, Docker Desktop manages group permissions etc directly for you. After that you can run Docker commands from the terminal, without managing stuff like `sudo` etc.
 
 
 ## Git
