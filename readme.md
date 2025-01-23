@@ -151,6 +151,35 @@ Q: How to install Brew
 A: Install by running the following code, which runs the installation command then adds to path:      
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`    
 `cd /opt/homebrew/bin/`   
+
+
+# Installing ROS Noetic (Robostack)
+
+Visit the official RoboStack GitHub page and install + Run ROS Noetic :  [RoboStack](https://robostack.github.io/GettingStarted.html)
+
+This is a very clean installation for various ROS2 versions, but only Noetic for ROS1 distributions. This method supports various OS platforms.
+
+When installing ROS Noetic on RoboStack, most likely you will encounter this error:
+```
+RLException: Unable to contact my own server at [http://LJ3M77W0XWX:50310/]. This usually means that the network is not configured properly.
+ ```
+This error indicates that the ROS (Robot Operating System) node is unable to communicate with itself. This is typically due to a network configuration issue, such as an improperly set ROS_MASTER_URI or ROS_HOSTNAME.
+
+```
+export ROS_MASTER_URI=http://localhost:11311 #
+export ROS_HOSTNAME=localhost #
+```
+
+Next, check server response by pinging it.
+```
+ping lj3m77w0xwx #
+```
+
+If the ping fails, add an entry to the /etc/hosts file to map the hostname to the local IP address (127.0.0.1 or the machine's actual IP):
+
+```
+sudo nano /etc/hosts #
+```
 `PATH=$PATH:/opt/homebrew/bin`  
 `echo export PATH=$PATH:/opt/homebrew/bin >> ~/.zshrc`  
 `brew doctor`
