@@ -148,10 +148,14 @@ See the above instructions and set CMAKE_ARGS to the BLAS backend you want to us
 
 Q: How to install Brew
 
-A: Install by running the following code, which runs the installation command then adds to path:      
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`    
-`cd /opt/homebrew/bin/`   
-
+A: Install by running the following code, which runs the installation command then adds to path:    
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+cd /opt/homebrew/bin/
+PATH=$PATH:/opt/homebrew/bin
+echo export PATH=$PATH:/opt/homebrew/bin >> ~/.zshrc
+brew doctor
+```
 
 # Installing ROS Noetic (Robostack)
 
@@ -180,9 +184,13 @@ If the ping fails, add an entry to the /etc/hosts file to map the hostname to th
 ```
 sudo nano /etc/hosts #
 ```
-`PATH=$PATH:/opt/homebrew/bin`  
-`echo export PATH=$PATH:/opt/homebrew/bin >> ~/.zshrc`  
-`brew doctor`
+
+Then within the file, add this line:
+```
+127.0.0.1 lj3m77w0xwx. #
+```
+
+This solution worked for me on the M4 Pro chip MacBook Pro 2024.
 
 
 
